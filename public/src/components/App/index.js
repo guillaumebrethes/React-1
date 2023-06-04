@@ -1,14 +1,23 @@
 // == Import
-import reactLogo from './react-logo.svg';
+import { Route, Routes } from 'react-router-dom';
+
+// == Import local
+import Home from '../Home/home';
+import Survey from '../Survey/survey';
 import './styles.css';
 
 // == Composant
-const App = () => (
-  <div className="app">
-    <img src={reactLogo} alt="react logo" />
-    <h1>Composant : App</h1>
-  </div>
-);
+const App = () => {
+  console.log('App => ');
+  return (
+    <div className="app">
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/survey" element={<Survey />} />
+      </Routes>
+    </div>
+  );
+};
 
 // == Export
 export default App;
