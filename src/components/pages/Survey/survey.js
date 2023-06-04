@@ -19,15 +19,34 @@ const Survey = () => {
   const [surveyData, setSurveyData] = useState({});
   const [isDataLoading, setDataLoading] = useState(false);
 
+  // useEffect(() => {
+  //   setDataLoading(true);
+  //   fetch('http://localhost:8000/survey')
+  //     .then((res) => res.json()
+  //       .catch((error) => console.log(error))
+  //       .then(({ surveyData }) => {
+  //         setSurveyData(surveyData);
+  //         setDataLoading(false);
+  //       }));
+  // }, []);
+
   useEffect(() => {
-    setDataLoading(true);
-    fetch('http://localhost:8000/survey')
-      .then((res) => res.json()
-        .catch((error) => console.log(error))
-        .then(({ surveyData }) => {
-          setSurveyData(surveyData);
-          setDataLoading(false);
-        }));
+    const fetchSurveyData = async () => {
+      setDataLoading(true);
+      try {
+        const response = await fetch('http://localhost:8000/survey');
+        const { surveyData } = await response.json();
+        setSurveyData(surveyData);
+      }
+      catch (err) {
+        console.log(err);
+        setError(true);
+      }
+      finally {
+        setDataLoading(false);
+      }
+    };
+    fetchSurveyData();
   }, []);
 
   return (
