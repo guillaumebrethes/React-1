@@ -9,7 +9,7 @@ const Card = ({ label, title, picture }) => {
 
   return (
     <div className="card">
-      <span> {label} </span>
+      <span className="card__label"> {label} </span>
       <img src={picture} alt="" className="cards__img" />
       <span> {title} </span>
     </div>

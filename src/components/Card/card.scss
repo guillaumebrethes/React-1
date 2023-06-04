@@ -1,12 +1,32 @@
+@use 'src/styles/vars';
+
 .card {
   display: flex;
   flex-direction: column;
   padding: 1rem;
   align-items: center;
-  border: solid black 1px;
+  justify-content: space-around;
   margin: 1rem;
+  background-color: #F9F9FC;
+  border-radius: 30px;
+  height: 300px;
 
-  &__img {
+
+  &-label {
+    width: 282px;
+    height: 29px;
+    left: 751px;
+    top: 474px;
+    font-family: 'Trebuchet MS';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+    color: #5843E4;
+  }
+
+  &-img {
     height: 80px;
     width: 80px;
   }
