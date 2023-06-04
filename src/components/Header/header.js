@@ -6,12 +6,13 @@ import { Link } from 'react-router-dom';
 
 //  === Component ===;
 const Header = () => {
-  console.log('Composant Header => ', Header);
+  console.log('Composant Header => ');
 
   return (
-    <nav>
+    <nav className="header">
       <Link to="/">Acceuil</Link>
-      <Link to="/survey">Questionnaire </Link>
+      <Link to="/survey/1"> Questionnaire </Link>
+      <Link to="/freelances"> Vers page freelance</Link>
     </nav>
   );
 };

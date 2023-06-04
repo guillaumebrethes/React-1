@@ -3,14 +3,14 @@
 //  === Import : local  ===;
 
 //  === Component ===;
-const Survey = () => {
-  console.log('Composant Survey => ', Survey);
+const Results = () => {
+  console.log('Composant Results => ');
 
   return (
     <div>
-      Composant Survey
+      <h1> Page Results</h1>
     </div>
   );
 };
 
-export default Survey;
+export default Results;
