@@ -40,7 +40,7 @@ const Survey = () => {
       }
       catch (err) {
         console.log(err);
-        setError(true);
+        // setError(true);
       }
       finally {
         setDataLoading(false);
