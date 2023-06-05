@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 //  === Import : local  ===;
 import Card from '../../Card/card';
 import Loader from '../../Loader/loader';
+import './freelances.scss';
 
 //  === Component ===;
 const Freelances = () => {
@@ -33,7 +34,7 @@ const Freelances = () => {
 
   return (
     <div className="freelances">
-      <h1>Cartes des freelances</h1>
+      {/* <h1>Cartes des freelances</h1> */}
       {
         isDataLoading ? (
           <Loader />

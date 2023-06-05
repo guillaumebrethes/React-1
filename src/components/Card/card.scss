@@ -10,13 +10,14 @@
   background-color: #F9F9FC;
   border-radius: 30px;
   height: 300px;
+  width: 300px;
 
 
   &-label {
-    width: 282px;
-    height: 29px;
-    left: 751px;
-    top: 474px;
+    // width: 282px;
+    // height: 29px;
+    // left: 751px;
+    // top: 474px;
     font-family: 'Trebuchet MS';
     font-style: normal;
     font-weight: 400;
@@ -26,8 +27,8 @@
     color: #5843E4;
   }
 
-  &-img {
-    height: 80px;
-    width: 80px;
-  }
+  // &-img {
+  //   width: 80px;
+  //   height: auto;
+  // }
 }

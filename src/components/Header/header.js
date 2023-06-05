@@ -10,6 +10,7 @@ const Header = () => {
 
   return (
     <div className="header">
+      <div>LOGO</div>
       <nav className="header__nav">
         <Link to="/" className="header__link">Acceuil</Link>
         <Link to="/survey/1" className="header__link"> Questionnaire </Link>
